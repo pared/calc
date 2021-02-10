@@ -10,10 +10,6 @@ jobs:
       uses: styfle/cancel-workflow-action@0.7.0
       with:
         access_token: ${{ github.token }}
-    - name: Sleep for 300 seconds
-      uses: jakejarvis/wait-action@master
-      with:
-        time: '300s'
     - uses: actions/checkout@v2
     - name: Set up Python 3.8
       uses: actions/setup-python@v1
